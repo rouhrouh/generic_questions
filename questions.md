@@ -1,52 +1,29 @@
-### Linux
+### Programmation / Python
 
-- Que font `grep` `df` `2>&1`
-- Comment afficher la fin d'un fichier de log comme un stream ?
+#### 1)
+Une fonction prend en paramètres trois nombres entiers.
+La fonction doit renvoyer True si deux d'entre eux exactement sont strictement positifs, sinon False
 
+#### 2)
+Écrire une fonction qui compte le nombre d'occurence d'un mot spécifique dans un texte
 
-### Réseaux et protocoles
+### 3)
 
-- Que contient une requête HTTP
-- Qu'est ce que le modèle OSI
-- Jusqu'à quelle couche va la commande `ping`
+Écrire une implémentation de la suite de fibonacci.
 
+Pour rappel:
+``` 
+f(0) = 0
+f(1) = 1
+# pour n >= 2
+f(n) = f(n-1) + f(n-2)
+```
 
-### Cryptography
-
-- Quelle est la différence entre chiffrement et hashing
-- Citer des algorithmes de chiffrement asymétriques. Comment fonctionnent-ils ?
-
-
-### Intuition, Estimation
-- Combien de personnes peut-on faire voyager dans un RER
-
-
-### Databases
-- Citer quelques types de bases de données
-- Qu'est ce que le théorème `CAP`
-
-
-### Testing
-- Qu'est ce que le TDD
-- Qu'est ce qu'un test unitaire, un test d'intégration ?
-
-
-### DevOps
-- Qu'est ce que docker
-- Qu'est ce que les 12 factors
-
-
-### Design, Clean Code, Secure Code
-- Qu'est ce que la qualité dans le code ?
-- Qu'est ce qu'un design pattern, citer des exemples
-- Qu'est ce que `SOLID`
-
-
-### Algorithmie
-- Qu'est ce que la complexité algorithmique
-- Citer des algos de tri. Quelle est leur complexité 
-
-
-### Programmation, Python
-- Quelle est la difference entre un framework et une librairie
-- Explquer l'O.O.P et la différence avec la programmation fonctionnelle
+tester : 
+``` 
+f(0) = 1
+f(1) = 1
+f(9) # 34
+f(40) # 102334155 
+f(100) # 354224848179261915075
+```
