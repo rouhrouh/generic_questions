@@ -8,11 +8,6 @@
 - Qu'est ce que le modèle OSI
 
 
-### Intuition, estimation
-- Combien de temps cela prend il d'executer une boucle for vide 1 milliard de fois sur un laptop standard
-- Combien de personnes peut-on faire voyager dans un RER
-
-
 ### Databases
 - Citer quelques types de bases de données
 - Qu'est ce que le théorème `CAP`
