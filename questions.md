@@ -33,7 +33,7 @@
 
 ### DevOps
 - Qu'est ce que docker
-- Qu'est ce que les 12 factors
+- Qu'est ce que la CI/CD
 
 
 ### Design, Clean Code, Secure Code
