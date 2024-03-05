@@ -11,6 +11,7 @@ Calculer la taille totale du filesystem
 
 ``` py
 filesystem = {
+    'x': 14,
     'Documents': {
         'work' : {
             'CV.txt': 10,
@@ -20,17 +21,17 @@ filesystem = {
     'Downloads': {
         'ubuntu.22.04.iso': 15000,
         'image.png': 241,
-        ''
+        '25: 145,': 11
     },
     'Code': {
         'api': {
             'main.py': 100,
             'src': {
                 'utils.py': 20,
-                'time.py': 46',
-            }
+                'time.py': 46,
+            },
             'config.json': 35
-        }
+        },
         'web': {
             'index.html': 96,
             'img': {
@@ -41,7 +42,7 @@ filesystem = {
     }
 }
 
-# 15859
+# 15870
 ```
 
 #### 2)
