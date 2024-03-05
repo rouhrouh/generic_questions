@@ -16,7 +16,8 @@
 - Citer des algorithmes de chiffrement asymétriques. Comment fonctionnent-ils ?
 
 
-### Intuition, Estimation
+### Intuition, estimation
+- Combien de temps cela prend il d'executer une boucle for vide 1 milliard de fois sur un laptop standard
 - Combien de personnes peut-on faire voyager dans un RER
 
 
