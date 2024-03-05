@@ -8,7 +8,6 @@
 
 - Que contient une requête HTTP
 - Qu'est ce que le modèle OSI
-- Jusqu'à quelle couche va la commande `ping`
 
 
 ### Cryptography
@@ -38,7 +37,6 @@
 
 ### Design, Clean Code, Secure Code
 - Qu'est ce que la qualité dans le code ?
-- Qu'est ce qu'un design pattern, citer des exemples
 - Qu'est ce que `SOLID`
 
 
