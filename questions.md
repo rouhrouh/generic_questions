@@ -1,52 +1,68 @@
-### Linux
-
-- Que font `grep` `df` `2>&1`
-- Comment afficher la fin d'un fichier de log comme un stream ?
-
-
-### Réseaux et protocoles
-
-- Que contient une requête HTTP
-- Qu'est ce que le modèle OSI
-- Jusqu'à quelle couche va la commande `ping`
-
-
-### Cryptography
-
-- Quelle est la différence entre chiffrement et hashing
-- Citer des algorithmes de chiffrement asymétriques. Comment fonctionnent-ils ?
-
-
-### Intuition, Estimation
-- Combien de personnes peut-on faire voyager dans un RER
-
-
-### Databases
-- Citer quelques types de bases de données
-- Qu'est ce que le théorème `CAP`
-
-
-### Testing
-- Qu'est ce que le TDD
-- Qu'est ce qu'un test unitaire, un test d'intégration ?
-
-
-### DevOps
-- Qu'est ce que docker
-- Qu'est ce que les 12 factors
-
-
-### Design, Clean Code, Secure Code
-- Qu'est ce que la qualité dans le code ?
-- Qu'est ce qu'un design pattern, citer des exemples
-- Qu'est ce que `SOLID`
-
-
 ### Algorithmie
-- Qu'est ce que la complexité algorithmique
-- Citer des algos de tri. Quelle est leur complexité 
 
+#### 1)
 
-### Programmation, Python
-- Quelle est la difference entre un framework et une librairie
-- Explquer l'O.O.P et la différence avec la programmation fonctionnelle
+Voici la représentation d'un filesystem
+
+avec des dossiers et des fichiers.
+les fichiers ont une taille en bit. 
+
+Calculer la taille totale du filesystem
+
+``` py
+filesystem = {
+    'Documents': {
+        'work' : {
+            'CV.txt': 10,
+            'contract.pdf': 255,
+        }
+    },
+    'Downloads': {
+        'ubuntu.22.04.iso': 15000,
+        'image.png': 241,
+        ''
+    },
+    'Code': {
+        'api': {
+            'main.py': 100,
+            'src': {
+                'utils.py': 20,
+                'time.py': 46',
+            }
+            'config.json': 35
+        }
+        'web': {
+            'index.html': 96,
+            'img': {
+                'logo.png': 12,
+                'background': 30,
+            }
+        }
+    }
+}
+
+# 15859
+```
+
+#### 2)
+
+Une fourmi est sur une grille de taille N * N, qui contient des récompenses de valeur differentes
+
+Elle part du coin en haut à gauche et droit arriver en bas à droite. 
+A chaque fois elle peut se déplacer uniquement soit vers la droite, soit vers le bas
+
+On veut maximiser la somme des récompneses.
+
+Quelle est la complexité de la solution ? Pourquoi ? Proposer un algo
+
+``` 
+board = [
+    [1, 2, 0, 1, 4],
+    [3, 3, 0, 2, 0],
+    [1, 0, 0, 0, 1],
+    [3, 0, 2, 0, 1],
+    [0, 5, 0, 2, 0]
+]
+
+# 15
+```
