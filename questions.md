@@ -1,52 +1,65 @@
-### Linux
+### Design
 
-- Que font `grep` `df` `2>&1`
-- Comment afficher la fin d'un fichier de log comme un stream ?
+#### 1)
 
+Voici le code qui vient d'apprendre la programmation orientée objet. Elle a codé une calculatrice
 
-### Réseaux et protocoles
+donner son avis sur la solution en axant les réflexions sur le design. 
 
-- Que contient une requête HTTP
-- Qu'est ce que le modèle OSI
-- Jusqu'à quelle couche va la commande `ping`
+Quels conseils lui donner ?
 
+``` py
+import string
 
-### Cryptography
+# put all alphabeth into a list
+alphabet = list(string.ascii_letters)
 
-- Quelle est la différence entre chiffrement et hashing
-- Citer des algorithmes de chiffrement asymétriques. Comment fonctionnent-ils ?
+"""_summary_
+"""
+# print(numbers)
 
+class Calc:
+    def __init__(self) -> None:
+        # will take all calculations and results
+        self.all_calc = {}
 
-### Intuition, Estimation
-- Combien de personnes peut-on faire voyager dans un RER
+        while True:
+            self.calculate()
+            self.ask_again()
 
-
-### Databases
-- Citer quelques types de bases de données
-- Qu'est ce que le théorème `CAP`
-
-
-### Testing
-- Qu'est ce que le TDD
-- Qu'est ce qu'un test unitaire, un test d'intégration ?
-
-
-### DevOps
-- Qu'est ce que docker
-- Qu'est ce que les 12 factors
-
-
-### Design, Clean Code, Secure Code
-- Qu'est ce que la qualité dans le code ?
-- Qu'est ce qu'un design pattern, citer des exemples
-- Qu'est ce que `SOLID`
-
-
-### Algorithmie
-- Qu'est ce que la complexité algorithmique
-- Citer des algos de tri. Quelle est leur complexité 
-
-
-### Programmation, Python
-- Quelle est la difference entre un framework et une librairie
-- Explquer l'O.O.P et la différence avec la programmation fonctionnelle
+    def calculate(self):
+        calc = input(" ---> ")
+        elements = []
+        result = ""
+        
+        if calc == "":
+            return self.calculate()
+        # separate all elements of input
+        for char in calc:
+            elements.append(char)
+        # check if a letter of alphabet is find on input
+        if any(char in elements for char in alphabet):
+            # if True :
+            print("ValueError : You must use only numbers and operators ")
+            return self.calculate()
+        # if False :
+        # get cacul to str
+        result = eval(result.join(elements))
+        # transform str value to obj -> calculate
+        self.all_calc[f"{calc}"] = result
+        print(result)
+        
+    def ask_again(self):
+        answer = input("Do you want to continue ? ( Y / N ) -> ").lower()
+        while True:
+            if answer == 'y':
+                break
+            elif answer == 'n':
+                # TODO: show caculs and all results --> self.all_calc
+                print("Your calculations were :")
+                for key, value in self.all_calc.items():
+                    print("   ",key," -> ", value)
+                raise(Exception)
+            else: 
+                return self.ask_again()
+```
