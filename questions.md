@@ -1,19 +1,11 @@
 ### Linux
-
 - Que font `grep` `df` `2>&1`
 - Comment afficher la fin d'un fichier de log comme un stream ?
 
 
 ### Réseaux et protocoles
-
 - Que contient une requête HTTP
 - Qu'est ce que le modèle OSI
-
-
-### Cryptography
-
-- Quelle est la différence entre chiffrement et hashing
-- Citer des algorithmes de chiffrement asymétriques. Comment fonctionnent-ils ?
 
 
 ### Intuition, estimation
